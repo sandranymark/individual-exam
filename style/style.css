@@ -59,12 +59,13 @@ body {
     display: none;
 }
 
-.header__navigation-menu.open .header__navigation-hamburger .icon-close {
-    display: none;
-}
 
 .header__navigation-menu .header__navigation-hamburger svg {
     stroke: white;
+}
+
+.header__navigation-menu .header__navigation-hamburger .icon-close {
+    display: none;
 }
 
 

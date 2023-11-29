@@ -4,50 +4,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
     <title>bonz-ai</title>
+
+
 </head>
 
 <body>
+    <!-- Header start -->
 
-    <div class="wrapper">
+    <header class="header">
 
-        <!-- Header start -->
 
-        <header class="header">
-            <h1 class="header__title">hotell här</h1>
 
-            <!-- Mobile menu -->
+        <!-- Navigation menu -->
 
-            <nav class="header__mobile-menu">
-                <input type="checkbox" class="header__burger" id="burger">
-                <label class="header__burger-btn" for="burger">
-                    <span></span>
-                </label>
-                <ul class="header__menu-list">
-                    <li class="header__list-item"><a href="#" class="header__menu-link">Stay</a></li>
+        <nav id="navbar" class="header__navigation-menu">
+
+            <ul class="header__menu-list">
+                <li class="header__list-item-home"><a href="#" class="header__menu-link">Home</a></li>
+                <div class="header__navigation-toggle">
                     <li class="header__list-item"><a href="#" class="header__menu-link">Hotels & Desitnations</a></li>
-                    <li class="header__list-item"><a href="#" class="header__menu-link">Conference & Meetings</a></li>
                     <li class="header__list-item"><a href="#" class="header__menu-link">About us</a></li>
                     <li class="header__list-item"><a href="#" class="header__menu-link">Booking</a></li>
-                    <li class="header__list-item"><a href="#" class="header__menu-link">Contact information</a></li>
+                    <li class="header__list-item"><a href="#" class="header__menu-link">Contact information</a>
+                    </li>
+                </div>
+            </ul>
 
-                </ul>
-            </nav>
+            <button id="hamburger-toggle" class="header__navigation-hamburger">
+                <div class="icon-open">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="48"
+                        height="48" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M4 6l16 0" />
+                        <path d="M4 12l16 0" />
+                        <path d="M4 18l16 0" />
+                    </svg>
+                </div>
+
+                <div class="icon-close">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="48"
+                        height="48" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M18 6l-12 12" />
+                        <path d="M6 6l12 12" />
+                    </svg>
+                </div>
+            </button>
+        </nav>
+
+    </header>
+
+    <section class="hero">
+        <img class="hero__image-logo" src="/individual-exam/assets/logo/bonz.ai-logo-color-landscape.png"
+            alt="logotype for bonz ai">
+
+    </section>
 
 
-            <!-- Desktop Menu -->
-
-            <nav class="header__desktop-menu">
-                <ul class="header__menu-list">
-                    <li class="header__list-item"><a href="#" class="header__menu-link">Stay</a></li>
-                    <li class="header__list-item"><a href="#" class="header__menu-link">Hotels & Desitnations</a></li>
-                    <li class="header__list-item"><a href="#" class="header__menu-link">Conference & Meetings</a></li>
-                    <li class="header__list-item"><a href="#" class="header__menu-link">About us</a></li>
-                    <li class="header__list-item"><a href="#" class="header__menu-link">Booking</a></li>
-                    <li class="header__list-item"><a href="#" class="header__menu-link">Contact information</a></li>
-                </ul>
-            </nav>
-        </header>
+    <h1 class="header__tile">Hotell</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae ea deserunt perspiciatis ipsam cum
+        necessitatibus iure voluptatem ipsum quos dolorem?</p>
 
 
 
@@ -58,17 +78,18 @@
 
 
 
-        </header>
-        <!-- Main start -->
-        <main>
-        </main>
+    <!-- Main start -->
+    <main>
+    </main>
 
-        <!-- Footer start -->
-        <footer>
+    <!-- Footer start -->
+    <footer>
 
-        </footer>
+    </footer>
 
     </div>
+
+    <script src="./app.js"></script>
 
 </body>
 

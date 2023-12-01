@@ -82,6 +82,68 @@ body {
     /* Logotype color: #55eabe */
 }
 
+
+/* Header booking form */
+
+
+
+.header__booking-form {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    margin-bottom: 1rem;
+    padding: 0.5rem 2rem;
+    border: none;
+    background-color: #55eabe;
+
+}
+
+
+.header__form--search,
+.header__form--date,
+.header__form--guest-number {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    margin-right: 1rem;
+    color: white;
+    font-weight: bold;
+
+}
+
+
+.header__form--search,
+.header__form--search-text,
+.header__form--guests,
+.header__form--date-picker {
+    padding: 0.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+
+.header__form--date-picker {
+    padding: 0.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-right: 0.5rem;
+}
+
+
+.header__form--button {
+    padding: 0.5rem 3rem;
+    margin-top: 1rem;
+    margin-left: 3rem;
+    border-radius: 20rem;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: white;
+    border: none;
+}
+
+/* Header image */
+
+
 .header__image {
     max-width: 100%;
     margin-bottom: 0;

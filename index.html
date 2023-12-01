@@ -15,29 +15,24 @@
     <!-- Header/navigation -->
 
     <header class="header">
-
-        <!-- Navigation menu -->
-
-        <nav id="navbar" class="header__navigation-menu">
+        <section id="navbar" class="header__navigation-menu">
 
             <ul class="header__menu-list">
-                <li class="header__list-item"><img class="header__logo"
+                <figure class="heder__logo header__list-item"><img class="header__logo"
                         src="/individual-exam/assets/logo/bonz.ai-logo-color-landscape.png" alt="logotype for bonz ai">
-                </li>
-
-                <li class="header__list-item-home"><a href="#" class="header__menu-link">Home</a></li>
-                <div class="header__navigation-toggle">
+                </figure>
+                <nav class="header__navigation-toggle">
+                    <li class="header__list-item--home"><a href="#" class="header__menu-link">Home</a></li>
                     <li class="header__list-item"><a href="#" class="header__menu-link">About us</a></li>
                     <li class="header__list-item"><a href="#" class="header__menu-link">Hotels & Desitnations</a></li>
                     <li class="header__list-item"><a href="#" class="header__menu-link">Booking</a></li>
                     <li class="header__list-item"><a href="#" class="header__menu-link">Contact information</a>
                     </li>
-
-                </div>
+                </nav>
             </ul>
 
-            <button id="hamburger-toggle" class="header__navigation-hamburger">
-                <div class="icon-open">
+            <button id="hamburger__toggle" class="header__navigation-hamburger">
+                <figure class="icon__open">
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="48"
                         height="48" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
                         stroke-linecap="round" stroke-linejoin="round">
@@ -46,9 +41,9 @@
                         <path d="M4 12l16 0" />
                         <path d="M4 18l16 0" />
                     </svg>
-                </div>
+                </figure>
 
-                <div class="icon-close">
+                <figure class="icon__close">
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="48"
                         height="48" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
                         stroke-linecap="round" stroke-linejoin="round">
@@ -56,9 +51,12 @@
                         <path d="M18 6l-12 12" />
                         <path d="M6 6l12 12" />
                     </svg>
-                </div>
+                </figure>
             </button>
-        </nav>
+        </section>
+
+        <figure class="header__image">
+        </figure>
 
     </header>
 
@@ -68,32 +66,26 @@
 
     <main class="main">
 
-        <section class="main__section">
+        <section class="main__container">
+            <article class="main__container--big">
+                <h1>Special Offers</h1>
+                <p> Take advantage of our exclusive promotions and packages, designed to enhance your stay and provide
+                    exceptional value. Whether it's a romantic getaway or a family vacation </p>
+                <button class="button">Book now!</button>
+            </article>
 
-            <figure class="main__image--big">
-                <img src="/individual-exam/assets/photos/09-day.jpg" alt="outside picture">
-            </figure>
-
-            <figure class="main__image--small">
-                <img src="/individual-exam/assets/photos/03-day.jpg" alt="wiew outside window">
-                <div class="main__image--background-color">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quae, voluptates?</div>
-            </figure>
-
-            <figure class="main__image--small">
-                <img src="/individual-exam/assets/photos/02-day.jpg" alt="interior photo">
-                <div class="main__image--background-color">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Aspernatur, porro.</div>
-            </figure>
+            <article class="main__container--small-top">
+                <p>Want a adventure?</p>
+                <h2>Learn more</h2>
+            </article>
+            <article class="main__container--small-bot">
+                <p>What are you waiting for?</p>
+                <h2>Join today</h2>
+            </article>
 
         </section>
+
     </main>
-    <h1 class="main__title">Hotell</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae ea deserunt perspiciatis ipsam cum
-        necessitatibus iure voluptatem ipsum quos dolorem?</p>
-
-
-
 
 
 

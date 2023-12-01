@@ -1,4 +1,4 @@
-const hamburgerToggle = document.querySelector("#hamburger-toggle");
+const hamburgerToggle = document.querySelector("#hamburger__toggle");
 const navbar = document.querySelector("#navbar")
 hamburgerToggle.addEventListener("click", onHamburgerClick)
 

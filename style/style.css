@@ -91,7 +91,7 @@ body {
     display: flex;
     /* justify-content: center; */
     align-items: center;
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
     padding: 0.5rem 2rem;
     border: none;
     background-color: #55eabe;
@@ -139,6 +139,8 @@ body {
     font-weight: bold;
     background-color: white;
     border: none;
+    box-shadow: 0 3px 0 rgba(0, 0, 0, 0.2);
+
 }
 
 /* Header image */
@@ -175,6 +177,7 @@ main {
     padding: 4rem;
     grid-column: auto /span 1;
     grid-row: auto /span 2;
+    text-align: center;
 }
 
 .main__container--big h1 {
@@ -212,7 +215,9 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
 }
+
 
 
 .main__container--small-top {

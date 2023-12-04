@@ -89,9 +89,9 @@ body {
 
 .header__booking-form {
     display: flex;
-    /* justify-content: center; */
+
     align-items: center;
-    /* margin-bottom: 1rem; */
+
     padding: 0.5rem 2rem;
     border: none;
     background-color: #55eabe;
@@ -143,6 +143,12 @@ body {
 
 }
 
+.header__form--button:hover {
+    background-color: rgb(213, 209, 209);
+}
+
+
+
 /* Header image */
 
 
@@ -151,7 +157,7 @@ body {
     margin-bottom: 0;
     background-image: url(/individual-exam/assets/photos/woodnest-treehouse-odda-norway.jpg);
     background-size: 100%;
-    height: 50rem;
+    height: 40rem;
     background-repeat: no-repeat;
 }
 
@@ -166,7 +172,9 @@ main {
 .main__container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    margin-top: 2rem;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+
 }
 
 /* Main - big - container */
@@ -178,6 +186,7 @@ main {
     grid-column: auto /span 1;
     grid-row: auto /span 2;
     text-align: center;
+
 }
 
 .main__container--big h1 {
@@ -204,7 +213,9 @@ main {
     margin-left: 7rem;
 }
 
-
+.main__container--big button:hover {
+    background-color: #55eabe;
+}
 
 /* Main - small - container */
 
@@ -224,11 +235,103 @@ main {
     background-color: #55eabe;
     color: black;
 
+
 }
 
 .main__container--small-bot {
     background-color: white;
+
+
 }
+
+.main__container--small-top h2,
+.main__container--small-bot h2 {
+    cursor: pointer;
+
+
+}
+
+
+
+.main__image--cabin {
+
+    max-width: 100%;
+    margin-bottom: 2rem;
+    padding: 0;
+    background-image: url(/individual-exam/assets/photos/aruliden-arcana-mirror-cabins-designboom-03.jpg);
+    background-size: 100%;
+    height: 40rem;
+    background-repeat: no-repeat;
+
+}
+
+.main__image--info-text {
+    margin-bottom: 10rem;
+    text-align: center;
+    font-family: cursive;
+}
+
+.main__image--info-text p {
+    padding: 10px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+/* Footer section */
+
+
+
+
+.footer-container {
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    padding: 4rem;
+    background-color: #55eabe;
+}
+
+.footer-container h2 {
+    grid-area: auto / auto / span 1 / span 4;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 3rem;
+
+    color: white;
+}
+
+.footer__h2 h2 {
+    grid-area: auto / auto / span 1 / span 1;
+    max-width: 70%;
+
+
+}
+
+.footer-container__footer-item {
+    grid-area: auto / auto / span 1 / span 1;
+    max-width: 70%;
+    font-weight: 300;
+
+
+}
+
+.footer-container__footer-item h3 {
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 

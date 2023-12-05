@@ -83,30 +83,84 @@
             <button class="header__form--button" type="submit">Search</button>
         </form>
 
-
-        <!-- Header image -->
-
-        <figure class="header__image">
-        </figure>
-
-
-
-
-
-
-
-
     </header>
 
 
 
+
     <!-- Main start -->
+    <h1 class="main__booking-title">Booking</h1>
 
-    <main class="main">
+    <main class="main_booking">
 
 
 
+        <!-- Container - right -->
+        <section class="main__booking-container--right">
 
+            <h2 class="main__booking-topic">Woodnest Mountaintops</h2>
+            <img class="main__booking-image" src="/individual-exam/assets/photos/woodnest-exclusive.jpg"
+                alt="woodnest-exclusive">
+            <article class="main__booking--info-list">
+                <h3 class="main__booking-heading">Our newest and most exclusive treehouses!
+                </h3>
+                <ul class="main__booking--list">
+                    <li>Perfect for two people</li>
+                    <li>Stunning view (Highest viewpoint, hardest climb)</li>
+                    <li>Your own bathtub</li>
+                </ul>
+            </article>
+            <form class="main__booking-form">
+                <fieldset class="main__booking-form--check-in">
+                    <label for="main__booking-form--date-picker"> Check-in Date <abbr
+                            title="Formatted as dd/mm/yyyy">*</abbr></label>
+                    <input type="date" class="main__booking-form--date-picker" name="main__booking-form--date-picker"
+                        required>
+                </fieldset>
+
+                <fieldset class="main__booking-form--check-out">
+                    <label for="main__booking-form--date-picker"> Check-out Date <abbr
+                            title="Formatted as dd/mm/yyyy">*</abbr></label>
+                    <input type="date" class="main__booking-form--date-picker" name="main__booking-form--date-picker"
+                        required>
+                </fieldset>
+                <input class="main__booking-btn" type="submit" value="Check Availability">
+            </form>
+        </section>
+
+        <!-- Container - left -->
+        <section class="main__booking-container--left">
+            <h2 class="main__booking-topic">Woodnest Originals</h2>
+            <img class="main__booking-image" src="/individual-exam/assets/photos/woodnest-original.jpeg"
+                alt="woodnest-exclusive">
+            <article class="main__booking--info-list">
+                <h3 class="main__booking-heading">The original treehouses that quickly gained international
+                    recognition
+                </h3>
+                <ul class="main__booking--list">
+                    <li>Suited for two, </li>
+                    <li>capacity for four people Shortest climb</li>
+
+                </ul>
+            </article>
+            <form class="main__booking-form">
+                <fieldset class="main__booking-form--check-in">
+                    <label for="main__booking-form--date-picker"> Check-in <abbr
+                            title="Formatted as dd/mm/yyyy">*</abbr></label>
+                    <input type="date" class="main__booking-form--date-picker" name="main__booking-form--date-picker"
+                        required>
+                </fieldset>
+
+                <fieldset class="main__booking-form--check-out">
+                    <label for="main__booking-form--date-picker"> Check-out <abbr
+                            title="Formatted as dd/mm/yyyy">*</abbr></label>
+                    <input type="date" class="main__booking-form--date-picker" name="main__booking-form--date-picker"
+                        required>
+                </fieldset>
+
+                <button class="main__booking-btn" type="submit">Check Availability</button>
+            </form>
+        </section>
 
 
     </main>

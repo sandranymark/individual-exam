@@ -125,6 +125,7 @@ body {
 }
 
 
+
 .header__form--date-picker {
     padding: 0.5rem;
     font-size: 1rem;
@@ -285,13 +286,35 @@ main {
 
 }
 
-/* Main section "Our facilities" */
+/* header section "Our facilities" */
+
+.header__video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
+
+
+/* Main section "Our facilities */
 
 
 
 /* Footer section */
+
+
+
+
+/* Header section " Hotels & Destinations */
+.header__hotels-image {
+    max-width: 100%;
+    margin-bottom: 0;
+    background-image: url(/individual-exam/assets/photos/woodnest-treehouse-odda-norway-designboom.jpg);
+    background-size: 100%;
+    height: 40rem;
+    background-repeat: no-repeat;
+}
 
 
 
@@ -337,17 +360,118 @@ main {
 
 
 
+/* Booking - Main section */
 
 
 
+.main__booking-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    margin-top: 4rem;
+}
+
+.main_booking {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 20rem;
+
+}
+
+.main__booking-topic {
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    margin-top: 4rem;
+    color: rgb(40, 69, 42);
+}
+
+
+.main__booking-image {
+    max-width: 100%;
+    height: 16rem;
+
+}
 
 
 
+.main__booking-heading {
+    text-align: left;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: rgb(40, 69, 42);
+    margin-bottom: 0.5rem;
+}
 
 
 
+.main__booking-container--right {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+    background-color: rgba(153, 120, 123, 0.17);
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.main__booking-container--left {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    background-color: rgba(153, 120, 123, 0.17);
+    display: flex;
+    flex-direction: column;
+
+}
 
 
+
+.main__booking--list {
+    margin-left: 1rem;
+}
+
+
+
+.main__booking--info-list {
+    padding: 2rem;
+}
+
+.main__booking-form--check-in,
+.main__booking-form--check-out {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    padding: 0.5rem;
+
+}
+
+
+.main__booking-form--date-picker {
+    padding: 0.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-right: 0.5rem 0.5rem;
+    font-style: none;
+
+}
+
+.main__booking-btn {
+    margin-left: 0.5rem;
+    margin-bottom: 0.5rem;
+    align-items: flex-start;
+    padding: 20px 6px 20px 6px;
+    max-width: 40%;
+    background-color: rgb(40, 69, 42);
+    border-radius: 3px;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+
+}
 
 
 

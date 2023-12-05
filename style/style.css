@@ -21,7 +21,7 @@ body {
     color: white;
     position: relative;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .header__menu-list {
@@ -117,7 +117,7 @@ body {
 .header__form--date-picker {
 
     padding: 0.5rem;
-    font-size: 1rem;
+    font-size: 14px;
     font-weight: bold;
     font-family: Segoe UI;
     border: none;
@@ -128,7 +128,7 @@ body {
 
 .header__form--date-picker {
     padding: 0.5rem;
-    font-size: 1rem;
+    font-size: 14px;
     font-weight: bold;
     margin-right: 0.5rem;
     font-style: none;
@@ -154,9 +154,15 @@ body {
 }
 
 
+/* Header video */
+.header__video-container {
+    max-width: 100%;
+    height: 60vh;
+    overflow: hidden;
 
-/* Header image */
 
+
+}
 
 .header__image {
     max-width: 100%;
@@ -203,7 +209,7 @@ main {
 
 .main__container--big p {
     margin-bottom: 3rem;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: white;
 
 }
@@ -233,33 +239,24 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 20px;
-
+    font-size: 18px;
 }
-
 
 
 .main__container--small-top {
     background-color: #55eabe;
     color: black;
-
-
 }
 
 .main__container--small-bot {
     background-color: white;
-
-
 }
 
 .main__container--small-top h2,
 .main__container--small-bot h2 {
     cursor: pointer;
-    font-size: 1.5rem;
-
-
+    font-size: 18px;
 }
-
 
 
 .main__image--cabin {
@@ -267,7 +264,7 @@ main {
     max-width: 100%;
     margin-bottom: 2rem;
     padding: 0;
-    background-image: url(/individual-exam/assets/photos/aruliden-arcana-mirror-cabins-designboom-03.jpg);
+    background-image: url(/individual-exam/assets/photos/woodnest-treehouse-odda-norway-designboom.jpg);
     background-size: 100%;
     height: 40rem;
     background-repeat: no-repeat;
@@ -286,36 +283,10 @@ main {
 
 }
 
-/* header section "Our facilities" */
-
-.header__video-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-
-
-/* Main section "Our facilities */
 
 
 
 /* Footer section */
-
-
-
-
-/* Header section " Hotels & Destinations */
-.header__hotels-image {
-    max-width: 100%;
-    margin-bottom: 0;
-    background-image: url(/individual-exam/assets/photos/woodnest-treehouse-odda-norway-designboom.jpg);
-    background-size: 100%;
-    height: 40rem;
-    background-repeat: no-repeat;
-}
-
 
 
 
@@ -330,14 +301,13 @@ main {
 
 .footer-container h2 {
     grid-area: auto / auto / span 1 / span 4;
-    font-size: 30px;
+    font-size: 1.5rem;
     font-weight: 700;
     margin-bottom: 3rem;
-
     color: white;
 }
 
-.footer__h2 h2 {
+.footer__h2 {
     grid-area: auto / auto / span 1 / span 1;
     max-width: 70%;
 
@@ -355,6 +325,21 @@ main {
 
 .footer-container__footer-item h3 {
     color: white;
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+
+/* Our facilities - Section */
+
+
+.header__facitilities-image {
+    max-width: 100%;
+    margin-bottom: 0;
+    background-image: url(/individual-exam/assets/photos/woodnest-treehouse-odda-norway.jpg);
+    background-size: 100%;
+    height: 40rem;
+    background-repeat: no-repeat;
 }
 
 
@@ -394,7 +379,6 @@ main {
 .main__booking-image {
     max-width: 100%;
     height: 16rem;
-
 }
 
 
@@ -424,7 +408,6 @@ main {
     background-color: rgba(153, 120, 123, 0.17);
     display: flex;
     flex-direction: column;
-
 }
 
 
@@ -446,6 +429,7 @@ main {
     border: none;
     padding: 0.5rem;
 
+
 }
 
 
@@ -455,6 +439,7 @@ main {
     font-weight: bold;
     margin-right: 0.5rem 0.5rem;
     font-style: none;
+    cursor: pointer;
 
 }
 
@@ -472,6 +457,27 @@ main {
     cursor: pointer;
 
 }
+
+
+
+
+
+/* Hotels & Destinations - Section */
+
+
+.header__hotels-image {
+    max-width: 100%;
+    margin-bottom: 0;
+    background-image: url(/individual-exam/assets/photos/woodnest-treehouse-odda-norway-designboom.jpg);
+    background-size: 100%;
+    height: 40rem;
+    background-repeat: no-repeat;
+}
+
+
+
+
+
 
 
 

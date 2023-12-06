@@ -209,7 +209,7 @@ main {
 
 .main__container--big p {
     margin-bottom: 3rem;
-    font-size: 1.3rem;
+    font-size: 18px;
     color: white;
 
 }
@@ -224,10 +224,12 @@ main {
     box-shadow: 0 3px 0 rgba(0, 0, 0, 0.2);
     cursor: pointer;
     margin-left: 7rem;
+
 }
 
 .main__container--big button:hover {
     background-color: #55eabe;
+
 }
 
 /* Main - small - container */
@@ -274,12 +276,14 @@ main {
 .main__image--info-text {
     margin-bottom: 10rem;
     text-align: center;
+    color: #28452a;
 
 }
 
 .main__image--info-text p {
     padding: 10px;
     font-size: 18px;
+    color: black;
 
 }
 
@@ -288,23 +292,26 @@ main {
 
 /* Footer section */
 
-
+.bg-footer-gray {
+    width: 100%;
+}
 
 .footer-container {
 
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    padding: 4rem;
-    background-color: #55eabe;
+    padding: 2rem;
+    background-color: #2e2e2e;
 }
 
 .footer-container h2 {
     grid-area: auto / auto / span 1 / span 4;
     font-size: 1.5rem;
     font-weight: 700;
-    margin-bottom: 3rem;
     color: white;
+    text-align: center;
+
 }
 
 .footer__h2 {
@@ -312,21 +319,27 @@ main {
     max-width: 70%;
 
 
+
 }
 
 .footer-container__footer-item {
     grid-area: auto / auto / span 1 / span 1;
-    max-width: 70%;
+    max-width: 100%;
     font-weight: 500;
     font-size: 16px;
+    text-align: center;
+    color: white;
+
 
 
 }
 
 .footer-container__footer-item h3 {
-    color: white;
+    color: #55eabe;
     font-size: 1rem;
     margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -341,6 +354,89 @@ main {
     height: 40rem;
     background-repeat: no-repeat;
 }
+
+
+.main__facitilities {
+
+    max-width: 1000px;
+    margin: auto;
+
+
+}
+
+.main__facitilities-headings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+.main__facitilities-title {
+    font-size: 4rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    margin-top: 4rem;
+    color: #28452a;
+    font-family: 'Prata', Georgia, "Times New Roman", serif;
+}
+
+.main__facitilities-heading--h3 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    color: #28452a;
+    font-family: 'Prata', Georgia, "Times New Roman", serif;
+
+}
+
+.main__facitilities-paragraph,
+.main__facitilities-list-item {
+    padding: 1rem;
+    font-size: 16px;
+    color: #28452a;
+
+}
+
+.main__facitilities-paragraph--bold {
+    font-weight: 500;
+}
+
+
+.main__facitilities-list-item {
+    margin-left: 20px;
+}
+
+
+.main__facitilities-container {
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 2rem;
+    margin-bottom: 5rem;
+}
+
+.main_facitilities-info {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+}
+
+
+
+.main__facitilities-image--hugging,
+.main__facitilities-image--house {
+    grid-column: 2 / span 1;
+    grid-row: auto / span 1;
+    height: 60vh;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+
+
+
+
 
 
 
@@ -378,14 +474,14 @@ main {
 
 .main__booking-image {
     max-width: 100%;
-    height: 16rem;
+    height: 30vh;
 }
 
 
 
 .main__booking-heading {
-    text-align: left;
-    font-size: 1.1rem;
+
+    font-size: 18px;
     font-weight: 500;
     color: rgb(40, 69, 42);
     margin-bottom: 0.5rem;
@@ -408,6 +504,7 @@ main {
     background-color: rgba(153, 120, 123, 0.17);
     display: flex;
     flex-direction: column;
+
 }
 
 
@@ -446,8 +543,9 @@ main {
 .main__booking-btn {
     margin-left: 0.5rem;
     margin-bottom: 0.5rem;
-    align-items: flex-start;
-    padding: 20px 6px 20px 6px;
+    align-items: center;
+    text-align: center;
+    padding: 10px 20px 10px 20px;
     max-width: 40%;
     background-color: rgb(40, 69, 42);
     border-radius: 3px;
@@ -455,11 +553,18 @@ main {
     color: white;
     font-size: 16px;
     cursor: pointer;
+    list-style: none;
 
 }
 
+.main_booking-availibility-info {
+    padding: 1.5rem;
+    text-align: center;
+}
 
-
+.main_booking-availibility-info p {
+    padding: 10px;
+}
 
 
 /* Hotels & Destinations - Section */

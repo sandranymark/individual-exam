@@ -62,7 +62,7 @@
 
         <form class="header__booking-form">
             <fieldset class="header__form-search">
-                <label for="header__form--search-text">Where do you want to stay?</label>
+                <label for="header__form-search-text">Where do you want to stay?</label>
                 <input type="text" class="header__form-search-text" placeholder=" &#9906; Hotels or destinations"
                     name="header__form-search-text" required>
             </fieldset>
@@ -83,7 +83,8 @@
 
             <button class="header__form-button" type="submit">Search</button>
         </form>
-        <div class="wrapper">
+
+
 
 
     </header>
@@ -95,124 +96,129 @@
 
 
     <main class="main-booking">
+
+
         <h1 class="main-booking__title">Booking</h1>
 
         <!-- Container - right -->
-        <section class="main-booking__container main-booking__container--right">
+        <section class="main-booking__container">
+            <article class="main-booking__container main-booking__container--right">
 
-            <h2 class="main-booking__topic">Woodnest Mountaintops</h2>
-            <img class="main-booking__image" src="/individual-exam/assets/photos/woodnest-exclusive.jpg"
-                alt="woodnest-exclusive">
-            <article class="main-booking__info-list">
-                <h3 class="main-booking__heading">Our newest and most exclusive treehouses!
-                </h3>
-                <ul class="main-booking__list">
-                    <li>Perfect for two people</li>
-                    <li>Stunning view (Highest viewpoint, hardest climb)</li>
-                    <li>Your own bathtub</li>
-                </ul>
+                <h2 class="main-booking__topic">Woodnest Mountaintops</h2>
+                <img class="main-booking__image" src="/individual-exam/assets/photos/woodnest-exclusive.jpg"
+                    alt="woodnest-exclusive">
+                <article class="main-booking__info-list">
+                    <h3 class="main-booking__heading">Our newest and most exclusive treehouses!
+                    </h3>
+                    <ul class="main-booking__list">
+                        <li>Perfect for two people</li>
+                        <li>Stunning view (Highest viewpoint, hardest climb)</li>
+                        <li>Your own bathtub</li>
+                    </ul>
+                </article>
+                <form class="main-booking__form">
+                    <fieldset class="main-booking__form main-booking__form--check-in">
+                        <label for="main-booking__form-date-picker"> Check-in Date <abbr
+                                title="Formatted as dd/mm/yyyy">*</abbr></label>
+                        <input type="date" class="main-booking__form-date-picker" name="main-booking__form-date-picker"
+                            required>
+                    </fieldset>
+
+                    <fieldset class="main-booking__form main-booking__form--check-out">
+                        <label for="main-booking__form-date-picker"> Check-out Date <abbr
+                                title="Formatted as dd/mm/yyyy">*</abbr></label>
+                        <input type="date" class="main-booking__form-date-picker" name="main-booking__form-date-picker"
+                            required>
+                    </fieldset>
+                    <!-- Check availability buttun -->
+                    <details>
+                        <summary class="main-booking__btn" type="submit">Check Availability</summary>
+                        <h2 class="main-booking__topic">Available rooms:</h2>
+                        <section class="main-booking__search-results">
+                            <article class="main-booking__availibility-info">
+                                <h3 class="main-booking__heading">Woodnest Mountaintop treehouse</h3>
+                                <img class="main__booking-image--availability"
+                                    src="/individual-exam/assets/photos/Albert-Heisler-01.jpg" width="100%">
+                                <p class="main__booking-information">Price: 4099 SEK / night</p>
+                                <p class="main__booking-information">These 14m2 luxurious treehouses boast a hand
+                                    carved
+                                    bespoke wooden bathtub and a bed that
+                                    lowers from the ceiling. The towering floor windows gives you breathtaking views
+                                    of the
+                                    forest canopy overlooking the majestic Hardanger fjord.</p>
+                            </article>
+
+                            <figure class="main-booking__image-availability">
+
+                                <img class="main__booking-image--availability"
+                                    src="/individual-exam/assets/photos/Samuel-Taipale-05.jpg" width="100%">
+
+                            </figure>
+
+                        </section>
+                    </details>
+                </form>
             </article>
-            <form class="main-booking__form">
-                <fieldset class="main-booking__form main-booking__form--check-in">
-                    <label for="main-booking__form-date-picker"> Check-in Date <abbr
-                            title="Formatted as dd/mm/yyyy">*</abbr></label>
-                    <input type="date" class="main-booking__form-date-picker" name="main-booking__form-date-picker"
-                        required>
-                </fieldset>
-
-                <fieldset class="main-booking__form main-booking__form--check-out">
-                    <label for="main-booking__form-date-picker"> Check-out Date <abbr
-                            title="Formatted as dd/mm/yyyy">*</abbr></label>
-                    <input type="date" class="main-booking__form-date-picker" name="main-booking__form-date-picker"
-                        required>
-                </fieldset>
-                <!-- Check availability buttun -->
-                <details>
-                    <summary class="main-booking__btn" type="submit">Check Availability</summary>
-                    <h2 class="main-booking__topic">Available rooms:</h2>
-                    <section class="main-booking__search-results">
-                        <article class="main-booking__availibility-info">
-                            <h3 class="main-booking__heading">Woodnest Mountaintop treehouse</h3>
-                            <img class="main__booking-image--availability"
-                                src="/individual-exam/assets/photos/Albert-Heisler-01.jpg" width="100%">
-                            <p class="main__booking-information">Price: 4099 SEK / night</p>
-                            <p class="main__booking-information">These 14m2 luxurious treehouses boast a hand
-                                carved
-                                bespoke wooden bathtub and a bed that
-                                lowers from the ceiling. The towering floor windows gives you breathtaking views
-                                of the
-                                forest canopy overlooking the majestic Hardanger fjord.</p>
-                        </article>
-
-                        <figure class="main-booking__image-availability">
-
-                            <img class="main__booking-image--availability"
-                                src="/individual-exam/assets/photos/Samuel-Taipale-05.jpg" width="100%">
-
-                        </figure>
-
-                    </section>
-                </details>
-            </form>
         </section>
-
         <!-- Container - left -->
-        <section class="main-booking__container--left">
-            <h2 class="main-booking__topic">Woodnest Originals</h2>
-            <img class="main-booking__image" src="/individual-exam/assets/photos/woodnest-original.jpeg"
-                alt="woodnest-exclusive">
-            <article class="main-booking__info-list">
-                <h3 class="main-booking__heading">The original treehouses that quickly gained international
-                    recognition
-                </h3>
-                <ul class="main-booking__list">
-                    <li>Suited for two, </li>
-                    <li>capacity for four people Shortest climb</li>
 
-                </ul>
+        <section class="main-booking__container">
+            <article class="main-booking__container main-booking__container--left">
+                <h2 class="main-booking__topic">Woodnest Originals</h2>
+                <img class="main-booking__image" src="/individual-exam/assets/photos/woodnest-original.jpeg"
+                    alt="woodnest-exclusive">
+                <article class="main-booking__info-list">
+                    <h3 class="main-booking__heading">The original treehouses that quickly gained international
+                        recognition
+                    </h3>
+                    <ul class="main-booking__list">
+                        <li>Suited for two, </li>
+                        <li>capacity for four people Shortest climb</li>
+
+                    </ul>
+                </article>
+                <form class="main-booking__form">
+                    <fieldset class="main-booking__form main-booking__form--check-in">
+                        <label for="main-booking__form-date-picker"> Check-in <abbr
+                                title="Formatted as dd/mm/yyyy">*</abbr></label>
+                        <input type="date" class="main-booking__form-date-picker" name="main-booking__form-date-picker"
+                            required>
+                    </fieldset>
+
+                    <fieldset class="main-booking__form main-booking__form--check-out">
+                        <label for="main-booking__form-date-picker"> Check-out <abbr
+                                title="Formatted as dd/mm/yyyy">*</abbr></label>
+                        <input type="date" class="main-booking__form-date-picker" name="main-booking__form-date-picker"
+                            required>
+                    </fieldset>
+                    <!-- Check availability buttun -->
+                    <details>
+                        <summary class="main-booking__btn" type="submit">Check Availability</summary>
+                        <h2 class="main-booking__topic">Available rooms:</h2>
+                        <section class="main-booking__search-results">
+                            <article class="main-booking__availibility-info">
+                                <h3 class="main-booking__heading">Woodnest original treehouse</h3>
+                                <img class="main__booking-image--availability"
+                                    src="/individual-exam/assets/photos/wood-nest.jpg" width="100%">
+                                <p class="main-booking__information">Price: 3099 SEK / night</p>
+                                <p class="main-booking__information">Suspended 6 metres above the forest floor,
+                                    these
+                                    panoramic treehouses overlook the
+                                    majestic Hardanger Fjord. These 14m2 treehouses use groundbreaking engineering,
+                                    as the
+                                    tree is encased with a metal collar which allows the tree to live freely inside.
+                                </p>
+                            </article>
+                            <figure class="main__booking-image--availability">
+                                <img class="main__booking-image--availability"
+                                    src="/individual-exam/assets/photos/WN_0600.jpg" width="100%">
+                            </figure>
+
+                        </section>
+                    </details>
+                </form>
             </article>
-            <form class="main-booking__form">
-                <fieldset class="main-booking__form main-booking__form--check-in">
-                    <label for="main-booking__form-date-picker"> Check-in <abbr
-                            title="Formatted as dd/mm/yyyy">*</abbr></label>
-                    <input type="date" class="main-booking__form-date-picker" name="main-booking__form-date-picker"
-                        required>
-                </fieldset>
-
-                <fieldset class="main-booking__form main-booking__form--check-out">
-                    <label for="main-booking__form-date-picker"> Check-out <abbr
-                            title="Formatted as dd/mm/yyyy">*</abbr></label>
-                    <input type="date" class="main-booking__form-date-picker" name="main-booking__form-date-picker"
-                        required>
-                </fieldset>
-                <!-- Check availability buttun -->
-                <details>
-                    <summary class="main-booking__btn" type="submit">Check Availability</summary>
-                    <h2 class="main-booking__topic">Available rooms:</h2>
-                    <section class="main-booking__search-results">
-                        <article class="main-booking__availibility-info">
-                            <h3 class="main-booking__heading">Woodnest original treehouse</h3>
-                            <img class="main__booking-image--availability"
-                                src="/individual-exam/assets/photos/wood-nest.jpg" width="100%">
-                            <p class="main-booking__information">Price: 3099 SEK / night</p>
-                            <p class="main-booking__information">Suspended 6 metres above the forest floor,
-                                these
-                                panoramic treehouses overlook the
-                                majestic Hardanger Fjord. These 14m2 treehouses use groundbreaking engineering,
-                                as the
-                                tree is encased with a metal collar which allows the tree to live freely inside.
-                            </p>
-                        </article>
-                        <figure class="main__booking-image--availability">
-                            <img class="main__booking-image--availability"
-                                src="/individual-exam/assets/photos/WN_0600.jpg" width="100%">
-                        </figure>
-
-                    </section>
-                </details>
-            </form>
         </section>
-
     </main>
 
 

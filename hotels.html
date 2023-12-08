@@ -15,25 +15,27 @@
     <!-- Header/navigation -->
 
     <header class="header">
-        <section id="navbar" class="header__navigation-menu">
+        <section id="header__navbar" class="header__navigation-menu">
 
             <ul class="header__menu-list">
-                <figure class="heder__logo header__list-item"><img class="header__logo"
-                        src="/individual-exam/assets/logo/bonz.ai-logo-color-landscape.png" alt="logotype for bonz ai">
+                <figure class="heder__logo header__list-item">
+                    <img class="header__logo" src="/individual-exam/assets/logo/bonz.ai-logo-color-landscape.png"
+                        alt="logotype for bonz-ai">
                 </figure>
                 <nav class="header__navigation-toggle">
-                    <li class="header__list-item--home"><a href="index.html" class="header__menu-link">Home</a></li>
+                    <li class="header__list-item-home"><a href="index.html" class="header__menu-link">Home</a></li>
                     <li class="header__list-item"><a href="facilities.html" class="header__menu-link">Our facilities</a>
                     </li>
                     <li class="header__list-item"><a href="hotels.html" class="header__menu-link">Hotels &
                             Desitnations</a></li>
                     <li class="header__list-item"><a href="booking.html" class="header__menu-link">Booking</a></li>
-
+                    <!-- <li class="header__list-item"><a href="#" class="header__menu-link">Contact information</a>
+                    </li> -->
                 </nav>
             </ul>
             <!-- Hamburger button -->
-            <button id="hamburger__toggle" class="header__navigation-hamburger">
-                <figure class="icon__open">
+            <button id="header__hamburger-toggle" class="header__navigation-hamburger">
+                <figure class="header__icon-open">
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="48"
                         height="48" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
                         stroke-linecap="round" stroke-linejoin="round">
@@ -44,7 +46,7 @@
                     </svg>
                 </figure>
 
-                <figure class="icon__close">
+                <figure class="header__icon-close">
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="48"
                         height="48" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
                         stroke-linecap="round" stroke-linejoin="round">
@@ -59,19 +61,19 @@
         <!-- Header booking form -->
 
         <form class="header__booking-form">
-            <fieldset class="header__form--search">
+            <fieldset class="header__form-search">
                 <label for="header__form--search-text">Where do you want to stay?</label>
-                <input type="text" class="header__form--search-text" placeholder=" &#9906; Hotels or destinations"
-                    name="header__form--search-text" required>
+                <input type="text" class="header__form-search-text" placeholder=" &#9906; Hotels or destinations"
+                    name="header__form-search-text" required>
             </fieldset>
-            <fieldset class="header__form--date">
-                <label for="header__form--date-picker"> Arrival and Departure</label>
-                <input type="date" class="header__form--date-picker" name="header__form--date-picker" required>
+            <fieldset class="header__form-date">
+                <label for="header__form-date-picker"> Arrival and Departure</label>
+                <input type="date" class="header__form-date-picker" name="header__form-date-picker" required>
             </fieldset>
 
-            <fieldset class="header__form--guest-number">
-                <label for="header__form--guests">Guests:</label>
-                <select class="header__form--guests" name="header__form--guests" required>
+            <fieldset class="header__form-guest-number">
+                <label for="header__form-guests">Guests:</label>
+                <select class="header__form-guests" name="header__form-guests" required>
                     <option value="one">1</option>
                     <option value="two">2</option>
                     <option value="three">3</option>
@@ -79,19 +81,19 @@
             </fieldset>
 
 
-            <button class="header__form--button" type="submit">Search</button>
+            <button class="header__form-button" type="submit">Search</button>
         </form>
+        <div class="wrapper">
 
 
 
 
-
-        <!-- Header image -->
-
+            <!-- Header image -->
 
 
-        <figure class="header__hotels-image">
-        </figure>
+
+            <figure class="header__hotels-image">
+            </figure>
 
 
 

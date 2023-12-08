@@ -70,7 +70,7 @@ body {
 }
 
 
-.header__navigation-menu .header__navigation-hamburger .icon__close {
+.header__navigation-menu .header__navigation-hamburger .header__icon-close {
     display: none;
 }
 
@@ -100,9 +100,9 @@ body {
 }
 
 
-.header__form--search,
-.header__form--date,
-.header__form--guest-number {
+.header__form-search,
+.header__form-date,
+.header__form-guest-number {
     display: flex;
     flex-direction: column;
     border: none;
@@ -113,10 +113,10 @@ body {
 }
 
 
-.header__form--search,
-.header__form--search-text,
-.header__form--guests,
-.header__form--date-picker {
+.header__form-search,
+.header__form-search-text,
+.header__form-guests,
+.header__form-date-picker {
 
     padding: 0.5rem;
     font-size: 14px;
@@ -126,7 +126,7 @@ body {
 }
 
 
-.header__form--date-picker {
+.header__form-date-picker {
     padding: 0.5rem;
     font-size: 14px;
     font-weight: bold;
@@ -135,7 +135,7 @@ body {
 }
 
 
-.header__form--button {
+.header__form-button {
     padding: 0.5rem 3rem;
     margin-top: 1rem;
     margin-left: 1rem;
@@ -149,7 +149,7 @@ body {
 }
 
 
-.header__form--button:hover {
+.header__form-button:hover {
     background-color: rgb(213, 209, 209);
 }
 
@@ -192,7 +192,7 @@ main {
 
 /* Main - big - container */
 
-.main__container--big {
+.main__container-big {
     background-color: #5b5a5a;
     height: 30rem;
     padding: 4rem;
@@ -202,21 +202,21 @@ main {
 }
 
 
-.main__container--big h1 {
+.main__container-title {
     color: white;
     font-size: 2rem;
     margin-bottom: 3rem;
 }
 
 
-.main__container--big p {
+.main__container-big p {
     margin-bottom: 3rem;
     font-size: 18px;
     color: white;
 }
 
 
-.main__container--big button {
+.main__button {
     background-color: #fff;
     border: none;
     padding: 1rem 2rem;
@@ -229,15 +229,15 @@ main {
 }
 
 
-.main__container--big button:hover {
+.main__button:hover {
     background-color: #55eabe;
 }
 
 
 /* Main - small - container */
 
-.main__container--small-top,
-.main__container--small-bot {
+.main__container-small-top,
+.main__container-small-bot {
     grid-column: auto /span 1;
     display: flex;
     flex-direction: column;
@@ -247,44 +247,44 @@ main {
 }
 
 
-.main__container--small-top {
+.main__container-small-top {
     background-color: #55eabe;
     color: black;
 }
 
 
-.main__container--small-bot {
+.main__container-small-bot {
     background-color: white;
 }
 
 
-.main__container--small-top h2,
-.main__container--small-bot h2 {
+.main__container-small-top h2,
+.main__container-small-bot h2 {
     cursor: pointer;
     font-size: 18px;
 }
 
 
-.main__image--cabin {
+.main__image-cabins {
 
     max-width: 100%;
     margin-bottom: 2rem;
     padding: 0;
     background-image: url(/individual-exam/assets/photos/woodnest-treehouse-odda-norway-designboom.jpg);
     background-size: 100%;
-    height: 40rem;
+    height: 55vh;
     background-repeat: no-repeat;
 }
 
 
-.main__image--info-text {
+.main__image-info-text {
     margin-bottom: 10rem;
     text-align: center;
     color: #28452a;
 }
 
 
-.main__image--info-text p {
+.main__image-info-text p {
     padding: 10px;
     font-size: 18px;
     color: black;
@@ -341,7 +341,7 @@ main {
 
 /* Our facilities - Section */
 
-.header__facitilities-image {
+.header-facitilities__image {
     max-width: 100%;
     margin-bottom: 0;
     background-image: url(/individual-exam/assets/photos/woodnest-treehouse-odda-norway.jpg);
@@ -351,21 +351,20 @@ main {
 }
 
 
-.main__facitilities {
+.main-facitilities {
 
     max-width: 1000px;
     margin: auto;
 }
 
-
-.main__facitilities-headings {
+.main-facitilities__headings {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 
-.main__facitilities-title {
+.main-facitilities__title {
     font-size: 4rem;
     font-weight: 500;
     margin-bottom: 1rem;
@@ -375,7 +374,7 @@ main {
 }
 
 
-.main__facitilities-heading--h3 {
+.main-facitilities__topic {
     font-size: 1.5rem;
     font-weight: 300;
     margin-bottom: 1rem;
@@ -385,25 +384,25 @@ main {
 }
 
 
-.main__facitilities-paragraph,
-.main__facitilities-list-item {
+.main-facitilities__paragraph,
+.main-facitilities__list-item {
     padding: 1rem;
     font-size: 16px;
     color: #28452a;
 }
 
 
-.main__facitilities-paragraph--bold {
+.main-facitilities__paragraph--bold {
     font-weight: 500;
 }
 
 
-.main__facitilities-list-item {
+.main-facitilities__list-item {
     margin-left: 20px;
 }
 
 
-.main__facitilities-container {
+.main-facitilities__container {
 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -412,14 +411,14 @@ main {
 }
 
 
-.main_facitilities-info {
+.main-facitilities__info {
     grid-column: 1 / span 1;
     grid-row: 1 / span 1;
 }
 
 
-.main__facitilities-image--hugging,
-.main__facitilities-image--house {
+.main-facitilities__image-hugging,
+.main-facitilities__image-house {
     grid-column: 2 / span 1;
     grid-row: auto / span 1;
     height: 60vh;
@@ -567,11 +566,6 @@ main {
 
 @media screen and (max-width: 650px) {
 
-    .wrapper {
-
-        width: 100%;
-        height: fit-content;
-    }
 
 
     /* Hamburger menu */
@@ -615,25 +609,40 @@ main {
 
     .header__video-container {
         max-width: 100%;
-        height: 100%
+        height: 100%;
+        margin-bottom: 2rem;
+
     }
 
 
     /* MAIN */
 
+
+
     .main__container {
         display: flex;
         flex-direction: column;
+        margin-top: 0rem;
+        margin-bottom: 2rem;
+
     }
 
 
+    .main__container-big {
+        margin-top: 0;
+        padding: 2rem
+    }
+
     .main__container h1 {
         font-size: 24px;
+        margin-top: 1rem;
     }
 
 
     .main__container-heading {
         font-size: 20px;
+        margin-bottom: 0.5rem;
+        margin-top: 0.5rem;
     }
 
 
@@ -641,18 +650,23 @@ main {
         font-size: 14px;
     }
 
-
-
-    .main__container--small-top,
-    .main__container--small-bot {
+    .main__container-small-top,
+    .main__container-small-bot {
         height: 10rem;
         border-bottom: solid black 1px;
     }
 
 
-    .main__image--cabin {
+    .main__image-cabins {
         max-width: 100%;
         height: 30vh;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .main__image-info-text {
+        margin-bottom: 3rem;
+        margin-top: 2rem;
     }
 
 
@@ -687,7 +701,7 @@ main {
 
     /* Hotels & Desitinations */
 
-    .header__hotels-image {
+    .header-hotels__image {
         max-width: 100%;
         height: 50vh;
     }
@@ -695,38 +709,38 @@ main {
 
     /* Facitilities section*/
 
-    .header__facitilities-image {
+    .header-facitilities__image {
         max-width: 100%;
         height: 30vh;
     }
 
 
-    .main__facitilities-title {
+    .main-facitilities__title {
         margin-top: 0;
         text-align: center;
         font-size: 2rem;
     }
 
 
-    .main__facitilities-heading--h3 {
+    .main-facitilities__topic {
         font-size: 20px;
         width: 300px;
     }
 
 
-    .main__facitilities-container {
+    .main-facitilities__container {
         display: flex;
         flex-direction: column;
     }
 
 
-    .main__facitilities-paragraph {
+    .main-facitilities__paragraph {
         background-color: rgba(153, 120, 123, 0.17);
     }
 
 
-    .main__facitilities-image--hugging,
-    .main__facitilities-image--house {
+    .main-facitilities__image-hugging,
+    .main-facitilities__image-house {
         max-width: 100%;
         height: 100%;
         padding: 10px;

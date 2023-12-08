@@ -49,7 +49,7 @@ body {
 }
 
 
-.header__list-item--home {
+.header__list-item-home {
     background-color: #55eabe;
 }
 
@@ -293,12 +293,12 @@ main {
 
 /* Footer section */
 
-.bg-footer-gray {
+.footer {
     width: 100%;
 }
 
 
-.footer-container {
+.footer__container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -307,7 +307,7 @@ main {
 }
 
 
-.footer-container h2 {
+.footer__heading {
     grid-area: auto / auto / span 1 / span 4;
     font-size: 1.5rem;
     font-weight: 700;
@@ -315,14 +315,19 @@ main {
     text-align: center;
 }
 
-
-.footer__h2 {
+.footer__sub-heading {
     grid-area: auto / auto / span 1 / span 1;
-    max-width: 70%;
+    color: #55eabe;
+    font-size: 1rem;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+
 }
 
 
-.footer-container__footer-item {
+
+.footer__contact-info {
     grid-area: auto / auto / span 1 / span 1;
     max-width: 100%;
     font-weight: 500;
@@ -332,13 +337,6 @@ main {
 }
 
 
-.footer-container__footer-item h3 {
-    color: #55eabe;
-    font-size: 1rem;
-    margin-bottom: 5px;
-    display: flex;
-    justify-content: center;
-}
 
 
 /* Our facilities - Section */
@@ -432,7 +430,7 @@ main {
 
 /* Booking - Main section */
 
-.main__booking-title {
+.main-booking__title {
     text-align: center;
     font-size: 2.5rem;
     font-weight: 600;
@@ -441,7 +439,7 @@ main {
 }
 
 
-.main_booking {
+.main-booking {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     max-width: 1000px;
@@ -450,7 +448,7 @@ main {
 }
 
 
-.main__booking-topic {
+.main-booking__topic {
     text-align: center;
     font-size: 1.6rem;
     font-weight: 600;
@@ -460,13 +458,13 @@ main {
 }
 
 
-.main__booking-image {
+.main-booking__image {
     max-width: 100%;
     height: 30vh;
 }
 
 
-.main__booking-heading {
+.main-booking__heading {
 
     font-size: 18px;
     font-weight: 500;
@@ -475,7 +473,7 @@ main {
 }
 
 
-.main__booking-container--right {
+.main-booking__container--right {
     grid-column: 2 / span 1;
     grid-row: 1 / span 1;
     background-color: rgba(153, 120, 123, 0.17);
@@ -484,7 +482,7 @@ main {
     flex-direction: column;
 }
 
-.main__booking-container--left {
+.main-booking__container--left {
     grid-column: 1 / span 1;
     grid-row: 1 / span 1;
     background-color: rgba(153, 120, 123, 0.17);
@@ -493,18 +491,19 @@ main {
 }
 
 
-.main__booking--list {
+.main-booking__list {
     margin-left: 1rem;
 }
 
 
-.main__booking--info-list {
+.main-booking__info-list {
     padding: 2rem;
 }
 
 
-.main__booking-form--check-in,
-.main__booking-form--check-out {
+.main-booking__form,
+.main-booking__form--check-in,
+.main-booking__form--check-out {
     display: flex;
     flex-direction: column;
     border: none;
@@ -512,7 +511,7 @@ main {
 }
 
 
-.main__booking-form--date-picker {
+.main-booking__form-date-picker {
     padding: 0.5rem;
     font-size: 1rem;
     font-weight: bold;
@@ -522,7 +521,7 @@ main {
 }
 
 
-.main__booking-btn {
+.main-booking__btn {
     margin-left: 0.5rem;
     margin-bottom: 0.5rem;
     align-items: center;
@@ -539,13 +538,13 @@ main {
 }
 
 
-.main_booking-availibility-info {
+.main-booking__availibility-info {
     padding: 1.5rem;
     text-align: center;
 }
 
 
-.main_booking-availibility-info p {
+.main-booking__availibility-info p {
     padding: 10px;
 }
 
@@ -597,11 +596,11 @@ main {
         display: block;
     }
 
-    .header__navigation-menu.open .header__navigation-hamburger .icon__open {
+    .header__navigation-menu.open .header__navigation-hamburger .header__icon-open {
         display: none;
     }
 
-    .header__navigation-menu.open .header__navigation-hamburger .icon__close {
+    .header__navigation-menu.open .header__navigation-hamburger .header__icon-close {
         display: block;
     }
 
@@ -659,12 +658,12 @@ main {
 
     /* Footer */
 
-    .footer-container {
+    .footer__container {
         padding: 2rem;
         margin-bottom: 0;
     }
 
-    .footer-container h2 {
+    .footer__heading {
         height: 12vh;
         font-size: 1rem;
         text-align: left;
@@ -672,14 +671,14 @@ main {
     }
 
 
-    .footer-container__footer-item {
+    .footer__contact-info {
         font-size: 12px;
         text-align: left;
         margin-right: 1.5rem;
     }
 
 
-    .footer-container__footer-item h3 {
+    .footer__sub-heading {
         font-size: 12px;
         text-align: left;
         margin-right: 0.5rem;
@@ -736,19 +735,19 @@ main {
 
     /* booking */
 
-    .main__booking-title {
+    .main-booking__title {
         margin-top: 1rem;
         margin-bottom: 0.5rem;
     }
 
 
-    .main__booking {
+    .main-booking {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
 
 
-    .main__booking-container--right {
+    .main-booking__container--right {
         grid-column: 1 / span 2;
         grid-row: 2 / span 2;
         margin: 0;
@@ -758,7 +757,7 @@ main {
     }
 
 
-    .main__booking-container--left {
+    .main-booking__container--left {
         grid-column: 1 / span 2;
         grid-row: auto / span 2;
         margin: 0;

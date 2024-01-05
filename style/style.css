@@ -199,6 +199,7 @@ main {
     grid-column: auto /span 1;
     grid-row: auto /span 2;
     text-align: center;
+    margin-top: 15rem;
 }
 
 
@@ -244,12 +245,14 @@ main {
     justify-content: center;
     align-items: center;
     font-size: 18px;
+
 }
 
 
 .main__container-small-top {
     background-color: #55eabe;
     color: black;
+    margin-top: 15rem;
 }
 
 
